@@ -5,14 +5,11 @@ const merge = require('webpack-merge');
 
 const { resolve } = require('./util');
 
-const webpackCSSConfig = require('./webpack.css');
+const webpackCSSConfig = require('./webpack.public');
 
 module.exports = merge(webpackCSSConfig, {
   mode: 'production',
   resolve: {
-    alias: {
-      '@': resolve('../components'),
-    },
     // 不添加 .js 会导致 node_module 里的库无法被解析
     // babel 报错 can't resolve ... in src/ ....
     extensions: ['.vue', '.js', '.ts'],

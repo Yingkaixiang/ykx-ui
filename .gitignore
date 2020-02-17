@@ -23,3 +23,6 @@ yarn-error.log*
 
 # files
 build/qiniu.js
+
+# upload files
+server/uploads

@@ -1,8 +1,15 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const { resolve } = require('./util');
+
 const TARGET = process.env.npm_lifecycle_event;
 
 module.exports = {
+  resolve: {
+    alias: {
+      '@': resolve('../components'),
+    },
+  },
   module: {
     rules: [
       {

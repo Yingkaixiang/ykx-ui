@@ -18,4 +18,5 @@
   "javascript.validate.enable": false,
   "vetur.format.enable": false,
   "vetur.validation.template": false,
+  "editor.tabSize": 2,
 }

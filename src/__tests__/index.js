@@ -16,7 +16,7 @@ describe('全量导入', () => {
     Vue.use(entry.install);
     let total = 0;
     Object.keys(Vue.options.components).forEach((name) => {
-      if (name.indexOf('demo') !== -1) total++;
+      if (name.indexOf('ykx') !== -1) total++;
     });
     expect(total).toEqual(entry.total);
   });
